@@ -1,0 +1,26 @@
+<br />
+<div>
+  <table class="table table-bordered" >
+    <thead class="thead">
+      <tr class="text-center bg-warning">
+        <th scope="col">순번</th>
+        <th scope="col">이름</th>
+        <th scope="col">대기 등록 시간</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let customer of customers; let i = index">
+        <td class="text-center" style="width: 20%">
+          <h5>{{ i + 1 }}</h5>
+        </td>
+        <td class="text-center" style="width: 40%">
+          <h5>{{ customer.name }}</h5>
+        </td>
+        <td class="text-center" style="width: 40%">
+          <h5>{{ customer.time | date: "MM/dd hh:mm:ss a" }}</h5>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
