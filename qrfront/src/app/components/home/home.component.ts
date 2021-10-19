@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private cusnumService: CustomerNumService,
+    private customer1Service: CustomerNumService,
     private router: Router
   ) {}
 
@@ -28,9 +28,11 @@ export class HomeComponent implements OnInit {
       this.email = profile.user.email;
     });
 
-    this.cusnumService.getCustomerNums().subscribe((data) => {
-      this.customersQuantity = data.length;
-    });
+    setInterval(() => {
+      this.customer1Service.getCustomerNums().subscribe((data) => {
+        this.customersQuantity = data.length;
+      });
+    }, 1000);
   }
 
   onLogoutClick() {
