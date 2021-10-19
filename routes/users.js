@@ -74,7 +74,10 @@ router.post("/authenticate", (req, res, next) => {
           },
         });
       } else {
-        return res.json({ success: false, msg: "비밀번호가 일치하지 않습니다." });
+        return res.json({
+          success: false,
+          msg: "비밀번호가 일치하지 않습니다.",
+        });
       }
     });
   });
@@ -97,55 +100,5 @@ router.get(
     });
   }
 );
-
-//validate
-router.get("/validate", (req, res, next) => {
-  res.send("검증");
-});
-
-router.get("/list", (req, res, next) => {
-  User.getAll((err, users) => {
-    if (err) throw err;
-    res.json(users);
-  });
-});
-router.get("/cus_list", async (req, res) => {
-  const customer = await User.find();
-  res.json(customer);
-});
-
-router.get("/:id", async (req, res) => {
-  const customer = await User.findById(req.params.id);
-  res.json(customer);
-});
-
-router.post("/cus_list", async (req, res) => {
-  const customer = new User(req.body);
-  await customer.save();
-  res.json(customer);
-});
-
-router.put("/:id", async (req, res) => {
-  await User.findByIdAndUpdate(req.params.id, req.body, {
-    useFindAndModify: false,
-  });
-  res.json({
-    message: "ok",
-  });
-});
-
-router.delete("/remove", async (req, res) => {
-  await User.deleteMany();
-  res.json({
-    message: "ok",
-  });
-});
-
-router.delete("/cus_list/:id", async (req, res) => {
-  await User.findByIdAndDelete(req.params.id);
-  res.json({
-    message: "ok",
-  });
-});
 
 module.exports = router;

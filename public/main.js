@@ -387,7 +387,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<link\n  rel=\"stylesheet\"\n  href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\"\n  integrity=\"sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm\"\n  crossorigin=\"anonymous\"\n/>\n\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-warning\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-logo\">\n      <i class=\"fab fa-centercode\"></i>\n      <a class=\"navbar-brand\" routerLink=\"/\">Qyaho 은행</a>\n    </div>\n    <button\n      class=\"navbar-toggler\"\n      type=\"button\"\n      data-toggle=\"collapse\"\n      data-target=\"#navbarSupportedContent\"\n      aria-controls=\"navbarSupportedContent\"\n      aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\"\n    >\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/register\">회원가입</a>\n        </li>\n\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/login\">로그인</a>\n        </li>\n\n        <ul class=\"navbar-nav mr-auto\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/picslide\">대기 등록 방법</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/qrgen\">대기 순번 QR코드</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/customerNum\">대기 리스트</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/profile\">프로필</a>\n          </li>\n        </ul>\n        <ul class=\"navbar-nav mr-right\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">로그아웃</a>\n          </li>\n        </ul>\n      </ul>\n    </div>\n  </div>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<link\n  rel=\"stylesheet\"\n  href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\"\n  integrity=\"sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm\"\n  crossorigin=\"anonymous\"\n/>\n\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-warning\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-logo\">\n      <i class=\"fab fa-centercode\"></i>\n      <a class=\"navbar-brand\" routerLink=\"/\">Qyaho 은행</a>\n    </div>\n    <button\n      class=\"navbar-toggler\"\n      type=\"button\"\n      data-toggle=\"collapse\"\n      data-target=\"#navbarSupportedContent\"\n      aria-controls=\"navbarSupportedContent\"\n      aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\"\n    >\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/register\">회원가입</a>\n        </li>\n\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/login\">로그인</a>\n        </li>\n\n        <ul class=\"navbar-nav mr-auto\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/picslide\">대기 등록 방법</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/qrgen\">대기 순번 QR코드</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/profile\">프로필</a>\n          </li>\n        </ul>\n        <ul class=\"navbar-nav mr-right\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">로그아웃</a>\n          </li>\n        </ul>\n      </ul>\n    </div>\n  </div>\n</nav>\n");
 
 /***/ }),
 
@@ -875,9 +875,9 @@ let CustomerNumService = class CustomerNumService {
     }
     prepEndpoint(ep) {
         // 1. localhost에 포팅시
-        // return 'http://localhost:3000/' + ep;
+        return 'http://localhost:3000/' + ep;
         // 2. Heroku 클라우드 서버에 포팅시
-        return ep;
+        // return ep;
     }
     getCustomerNums() {
         return this.http.get(this.API_URL, httpOptions);
@@ -1082,9 +1082,9 @@ let AuthService = class AuthService {
     }
     prepEndpoint(ep) {
         // 1. localhost에 포팅시
-        // return 'http://localhost:3000/' + ep;
+        return 'http://localhost:3000/' + ep;
         // 2. Heroku 클라우드 서버에 포팅시
-        return ep;
+        // return ep;
     }
     registerUser(user) {
         const registerUrl = this.prepEndpoint('users/register');
