@@ -8,6 +8,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { GeneratorComponent } from './components/generator/generator.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { CustomerNumComponent } from './components/customer-num/customer-num.component';
+import { PicSlideComponent } from './components/pic-slide/pic-slide.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'qrgen', component: GeneratorComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'customerNum', component: CustomerNumComponent },
+  { path: 'picslide', component: PicSlideComponent },
   { path: '**', component: HomeComponent },
 ];
 
