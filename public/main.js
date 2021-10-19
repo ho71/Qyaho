@@ -271,7 +271,7 @@ ProfileComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<br />\n<h2 class=\"page-header\">Qyaho 회원가입</h2>\n<br />\n<form (ngSubmit)=\"onRegisterSubmit()\">\n  <div class=\"from-gruop\">\n    <label> * 이름 </label>\n    <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\" />\n  </div>\n  <div class=\"form-gruop\">\n    <label> * 이메일 </label>\n    <input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\" />\n  </div>\n  <div class=\"form-gruop\">\n    <label> * 생년월일 </label>\n    <input type=\"date\" [(ngModel)]=\"birth\" name=\"birth\" class=\"form-control\" />\n  </div>\n  <div class=\"form-gruop\">\n    <label> * ID </label>\n    <input\n      type=\"text\"\n      [(ngModel)]=\"username\"\n      name=\"username\"\n      class=\"form-control\"\n    />\n  </div>\n  <div class=\"form-group\">\n    <label> * 비밀번호 </label>\n    <input\n      type=\"password\"\n      [(ngModel)]=\"password1\"\n      name=\"password1\"\n      class=\"form-control\"\n    />\n  </div>\n  <div class=\"form-group\">\n    <label> * 비밀번호 확인 </label>\n    <input\n      type=\"password\"\n      [(ngModel)]=\"password2\"\n      name=\"password2\"\n      class=\"form-control\"\n    />\n  </div>\n  <br />\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"회원가입\" />\n</form>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<br />\n<h2 class=\"page-header\">Qyaho 회원가입</h2>\n<br />\n<form (ngSubmit)=\"onRegisterSubmit()\">\n  <div class=\"from-gruop\">\n    <label> * 이름 </label>\n    <input type=\"text\" [(ngModel)]=\"name\" name=\"name\" class=\"form-control\" />\n  </div>\n  <div class=\"form-gruop\">\n    <label> * 이메일 </label>\n    <input type=\"text\" [(ngModel)]=\"email\" name=\"email\" class=\"form-control\" />\n  </div>\n  <div class=\"form-gruop\">\n    <label> * 생년월일 </label>\n    <input type=\"date\" [(ngModel)]=\"birth\" name=\"birth\" class=\"form-control\" />\n  </div>\n  <div class=\"form-gruop\">\n    <label> * ID </label>\n    <input\n      type=\"text\"\n      [(ngModel)]=\"username\"\n      name=\"username\"\n      class=\"form-control\"\n    />\n  </div>\n  <div class=\"form-group\">\n    <label> * 비밀번호 </label>\n    <input\n      type=\"password\"\n      [(ngModel)]=\"password1\"\n      name=\"password1\"\n      class=\"form-control\"\n    />\n  </div>\n  <div class=\"form-group\">\n    <label> * 비밀번호 확인 </label>\n    <input\n      type=\"password\"\n      [(ngModel)]=\"password2\"\n      name=\"password2\"\n      class=\"form-control\"\n    />\n  </div>\n  <br />\n  <input type=\"submit\" class=\"btn btn-warning\" value=\"회원가입\" />\n</form>\n");
 
 /***/ }),
 
@@ -361,7 +361,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<br />\n<h2 class=\"page-header\">Qyaho 로그인</h2>\n<br />\n<form (ngSubmit)=\"onLoginSubmit()\">\n  <div class=\"form-group\">\n    <label>ID</label>\n    <input\n      type=\"text\"\n      class=\"form-control\"\n      name=\"username\"\n      [(ngModel)]=\"username\"\n    />\n  </div>\n  <br />\n  <div class=\"form-group\">\n    <label>비밀번호</label>\n    <input\n      type=\"password\"\n      class=\"form-control\"\n      name=\"password\"\n      [(ngModel)]=\"password\"\n    />\n  </div>\n  <br />\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"로그인\" />\n</form>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<br />\n<h2 class=\"page-header\">Qyaho 로그인</h2>\n<br />\n<form (ngSubmit)=\"onLoginSubmit()\">\n  <div class=\"form-group\">\n    <label>ID</label>\n    <input\n      type=\"text\"\n      class=\"form-control\"\n      name=\"username\"\n      [(ngModel)]=\"username\"\n    />\n  </div>\n  <br />\n  <div class=\"form-group\">\n    <label>비밀번호</label>\n    <input\n      type=\"password\"\n      class=\"form-control\"\n      name=\"password\"\n      [(ngModel)]=\"password\"\n    />\n  </div>\n  <br />\n  <input type=\"submit\" class=\"btn btn-warning\" value=\"로그인\" />\n</form>\n");
 
 /***/ }),
 
@@ -387,7 +387,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<link\n  rel=\"stylesheet\"\n  href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\"\n  integrity=\"sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm\"\n  crossorigin=\"anonymous\"\n/>\n\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-warning\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-logo\">\n      <i class=\"fab fa-centercode\"></i>\n      <a class=\"navbar-brand\" routerLink=\"/\">Qyaho 은행</a>\n    </div>\n    <button\n      class=\"navbar-toggler\"\n      type=\"button\"\n      data-toggle=\"collapse\"\n      data-target=\"#navbarSupportedContent\"\n      aria-controls=\"navbarSupportedContent\"\n      aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\"\n    >\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/register\">회원가입</a>\n        </li>\n\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/login\">로그인</a>\n        </li>\n\n        <ul class=\"navbar-nav mr-auto\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/qrgen\">대기 순번 QR코드</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/profile\">프로필</a>\n          </li>\n        </ul>\n        <ul class=\"navbar-nav mr-right\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">로그아웃</a>\n          </li>\n        </ul>\n      </ul>\n    </div>\n  </div>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<link\n  rel=\"stylesheet\"\n  href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\"\n  integrity=\"sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm\"\n  crossorigin=\"anonymous\"\n/>\n\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-warning\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-logo\">\n      <i class=\"fab fa-centercode\"></i>\n      <a class=\"navbar-brand\" routerLink=\"/\">Qyaho 은행</a>\n    </div>\n    <button\n      class=\"navbar-toggler\"\n      type=\"button\"\n      data-toggle=\"collapse\"\n      data-target=\"#navbarSupportedContent\"\n      aria-controls=\"navbarSupportedContent\"\n      aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\"\n    >\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/register\">회원가입</a>\n        </li>\n\n        <li *ngIf=\"!checkLoggedIn()\" class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/login\">로그인</a>\n        </li>\n\n        <ul class=\"navbar-nav mr-auto\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/qrgen\">대기 순번 QR코드</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/customerNum\">대기 리스트</a>\n          </li>\n\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/profile\">프로필</a>\n          </li>\n        </ul>\n        <ul class=\"navbar-nav mr-right\">\n          <li *ngIf=\"checkLoggedIn()\" class=\"nav-item\">\n            <a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">로그아웃</a>\n          </li>\n        </ul>\n      </ul>\n    </div>\n  </div>\n</nav>\n");
 
 /***/ }),
 
@@ -435,7 +435,7 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<br />\n<div>\n  <table class=\"table table-bordered\" >\n    <thead class=\"thead\">\n      <tr class=\"text-center bg-warning\">\n        <th scope=\"col\">순번</th>\n        <th scope=\"col\">이름</th>\n        <th scope=\"col\">대기 등록 시간</th>\n      </tr>\n    </thead>\n\n    <tbody>\n      <tr *ngFor=\"let customer of customers; let i = index\">\n        <td class=\"text-center\" style=\"width: 20%\">\n          <h5>{{ i + 1 }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.name }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.time | date: \"MM/dd hh:mm:ss a\" }}</h5>\n        </td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<br />\n<div\n  style=\"\n    text-align: center;\n    vertical-align: top;\n    border: 1px solid black;\n    border-radius: 5px;\n    padding: 10px;\n    background-color: rgb(255, 255, 227);\n  \"\n>\n  <h2 class=\"page-header\">\n    {{ name }}님 환영합니다! 현재 대기 상황은 다음과 같습니다.\n  </h2>\n  <h2 class=\"waitpeople\">현재 대기자 수는 {{ customersQuantity }}명 입니다.</h2>\n  <h2 class=\"waitpeople\">\n    예상 대기 시간은 {{ customersQuantity * 5 }}분 입니다.\n  </h2>\n  <table class=\"table table-bordered\">\n    <thead class=\"thead\">\n      <tr class=\"text-center bg-warning\">\n        <th scope=\"col\">순번</th>\n        <th scope=\"col\">이름</th>\n        <th scope=\"col\">대기 등록 시간</th>\n      </tr>\n    </thead>\n\n    <tbody>\n      <tr *ngFor=\"let customer of customers; let i = index\">\n        <td class=\"text-center\" style=\"width: 20%\">\n          <h5>{{ i + 1 }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.name }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.time | date: \"MM/dd hh:mm:ss a\" }}</h5>\n        </td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n");
 
 /***/ }),
 
@@ -688,18 +688,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _customer_num_component_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./customer-num.component.scss */ "r3tT");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _services_customers_num_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/customers_num.service */ "Zfc8");
+/* harmony import */ var src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/auth.service */ "lGQG");
+
 
 
 
 
 
 let CustomerNumComponent = class CustomerNumComponent {
-    constructor(customer1Service) {
+    constructor(customer1Service, authService) {
         this.customer1Service = customer1Service;
+        this.authService = authService;
         this.customers = [];
         this.customersQuantity = 0;
     }
     ngOnInit() {
+        this.authService.getProfile().subscribe((profile) => {
+            this.name = profile.user.name;
+        });
         setInterval(() => {
             this.customer1Service.getCustomerNums().subscribe((data) => {
                 this.customers = data;
@@ -710,7 +716,8 @@ let CustomerNumComponent = class CustomerNumComponent {
     }
 };
 CustomerNumComponent.ctorParameters = () => [
-    { type: _services_customers_num_service__WEBPACK_IMPORTED_MODULE_4__["CustomerNumService"] }
+    { type: _services_customers_num_service__WEBPACK_IMPORTED_MODULE_4__["CustomerNumService"] },
+    { type: src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] }
 ];
 CustomerNumComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
@@ -1163,7 +1170,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<style type=\"text/css\">\n  .blank {\n    height: 150px;\n  }\n</style>\n<div *ngIf=\"!checkLoggedIn()\" style=\"text-align: center; vertical-align: top\">\n  <div style=\"padding-top: 40px\">\n    <h1>아직 계정이 없으신가요?</h1>\n    <h4>계정이 있으시면 로그인하세요!</h4>\n    <br />\n    <button\n      *ngIf=\"!checkLoggedIn()\"\n      type=\"button\"\n      class=\"btn btn-primary\"\n      routerLink=\"/register\"\n    >\n      회원가입\n    </button>\n    &nbsp;\n    <button\n      *ngIf=\"!checkLoggedIn()\"\n      type=\"button\"\n      style=\"text-align: center; vertical-align: top\"\n      class=\"btn btn-primary\"\n      type=\"button\"\n      class=\"btn btn-primary\"\n      routerLink=\"/login\"\n    >\n      로그인\n    </button>\n  </div>\n</div>\n<br />\n<div\n  *ngIf=\"checkLoggedIn()\"\n  style=\"\n    text-align: center;\n    vertical-align: top;\n    border: 1px solid peachpuff;\n    border-radius: 60px;\n    padding-top: 10px;\n    background-color: peachpuff;\n  \"\n>\n  <h1 style=\"padding-top: 10px; padding-bottom: 10px\">\n    어서오세요! Qyaho 은행입니다.\n  </h1>\n</div>\n<br />\n\n<div\n  *ngIf=\"checkLoggedIn()\"\n  style=\"\n    text-align: center;\n    vertical-align: top;\n    border: 1px solid black;\n    border-radius: 5px;\n    padding: 10px;\n    background-color: rgb(255, 255, 227);\n  \"\n>\n  <div *ngIf=\"name\">\n    <h2 class=\"page-header\">\n      {{ name }}님 환영합니다! 현재 대기 상황은 다음과 같습니다.\n    </h2>\n    <h2 class=\"waitpeople\">\n      현재 대기자 수는 {{ customersQuantity }}명 입니다.\n    </h2>\n    <h2 class=\"waitpeople\">\n      예상 대기 시간은 {{ customersQuantity * 5 }}분 입니다.\n    </h2>\n    <app-customer-num></app-customer-num>\n  </div>\n</div>\n<br />\n<div\n  *ngIf=\"checkLoggedIn()\"\n  style=\"\n    text-align: center;\n    vertical-align: top;\n    border-radius: 5px;\n    padding: 10px;\n  \"\n>\n  <app-pic-slide></app-pic-slide>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<style type=\"text/css\">\n  .blank {\n    height: 150px;\n  }\n</style>\n<div *ngIf=\"!checkLoggedIn()\" style=\"text-align: center; vertical-align: top\">\n  <div style=\"padding-top: 40px\">\n    <h1>아직 계정이 없으신가요?</h1>\n    <h4>계정이 있으시면 로그인하세요!</h4>\n    <br />\n    <button\n      *ngIf=\"!checkLoggedIn()\"\n      type=\"button\"\n      class=\"btn btn-warning\"\n      routerLink=\"/register\"\n    >\n      회원가입\n    </button>\n    &nbsp;\n    <button\n      *ngIf=\"!checkLoggedIn()\"\n      type=\"button\"\n      style=\"text-align: center; vertical-align: top\"\n      class=\"btn btn-warning\"\n      routerLink=\"/login\"\n    >\n      로그인\n    </button>\n  </div>\n</div>\n<br />\n<div\n  *ngIf=\"checkLoggedIn()\"\n  style=\"\n    text-align: center;\n    vertical-align: top;\n    border: 1px solid peachpuff;\n    border-radius: 60px;\n    padding-top: 10px;\n    background-color: peachpuff;\n  \"\n>\n  <h1 style=\"padding-top: 10px; padding-bottom: 10px\">\n    어서오세요! Qyaho 은행입니다.\n  </h1>\n</div>\n<br />\n<div\n  *ngIf=\"checkLoggedIn()\"\n  style=\"\n    text-align: center;\n    vertical-align: top;\n    border-radius: 5px;\n    padding: 10px;\n  \"\n>\n  <app-pic-slide></app-pic-slide>\n</div>\n");
 
 /***/ }),
 
@@ -1186,6 +1193,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/register/register.component */ "XC3f");
 /* harmony import */ var _components_generator_generator_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/generator/generator.component */ "6y1P");
 /* harmony import */ var _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/profile/profile.component */ "DZ0t");
+/* harmony import */ var _components_customer_num_customer_num_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/customer-num/customer-num.component */ "Z5Py");
+
 
 
 
@@ -1202,7 +1211,8 @@ const routes = [
     { path: 'register', component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_6__["RegisterComponent"] },
     { path: 'qrgen', component: _components_generator_generator_component__WEBPACK_IMPORTED_MODULE_7__["GeneratorComponent"] },
     { path: 'profile', component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_8__["ProfileComponent"] },
-    { path: '**', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] }
+    { path: 'customerNum', component: _components_customer_num_customer_num_component__WEBPACK_IMPORTED_MODULE_9__["CustomerNumComponent"] },
+    { path: '**', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
