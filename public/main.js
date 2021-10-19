@@ -875,9 +875,9 @@ let CustomerNumService = class CustomerNumService {
     }
     prepEndpoint(ep) {
         // 1. localhost에 포팅시
-        return 'http://localhost:3000/' + ep;
+        // return 'http://localhost:3000/' + ep;
         // 2. Heroku 클라우드 서버에 포팅시
-        // return ep;
+        return ep;
     }
     getCustomerNums() {
         return this.http.get(this.API_URL, httpOptions);
@@ -1082,9 +1082,9 @@ let AuthService = class AuthService {
     }
     prepEndpoint(ep) {
         // 1. localhost에 포팅시
-        return 'http://localhost:3000/' + ep;
+        // return 'http://localhost:3000/' + ep;
         // 2. Heroku 클라우드 서버에 포팅시
-        // return ep;
+        return ep;
     }
     registerUser(user) {
         const registerUrl = this.prepEndpoint('users/register');
