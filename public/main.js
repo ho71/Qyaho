@@ -435,7 +435,7 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<br />\n  <table class=\"table table-bordered\">\n    <thead class=\"thead\">\n      <tr class=\"text-center bg-warning\">\n        <th scope=\"col\">순번</th>\n        <th scope=\"col\">이름</th>\n        <th scope=\"col\">대기 등록 시간</th>\n      </tr>\n    </thead>\n\n    <tbody>\n      <tr *ngFor=\"let customer of customers;\">\n        <td class=\"text-center\" style=\"width: 20%\">\n          <h5>{{ customers.no }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.name }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.time | date: \"MM/dd hh:mm:ss a\" }}</h5>\n        </td>\n      </tr>\n    </tbody>\n  </table>");
+/* harmony default export */ __webpack_exports__["default"] = ("<br />\n  <table class=\"table table-bordered\">\n    <thead class=\"thead\">\n      <tr class=\"text-center bg-warning\">\n        <th scope=\"col\">순번</th>\n        <th scope=\"col\">이름</th>\n        <th scope=\"col\">대기 등록 시간</th>\n      </tr>\n    </thead>\n\n    <tbody>\n      <tr *ngFor=\"let customer of customers;\">\n        <td class=\"text-center\" style=\"width: 20%\">\n          <h5>{{ customer.no }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.name }}</h5>\n        </td>\n        <td class=\"text-center\" style=\"width: 40%\">\n          <h5>{{ customer.time | date: \"MM/dd hh:mm:ss a\" }}</h5>\n        </td>\n      </tr>\n    </tbody>\n  </table>");
 
 /***/ }),
 
