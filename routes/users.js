@@ -96,6 +96,7 @@ router.get(
         email: req.user.email,
         birth: req.user.birth,
         time: curr_time.getTime(),
+        no: 0
       },
     });
   }
