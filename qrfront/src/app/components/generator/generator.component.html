@@ -16,6 +16,7 @@
       <div *ngIf="createdCode" class="qrdata">
         <ngx-qrcode [value]="createdCode"></ngx-qrcode>
       </div>
+      <br />
       <button mat-icon-button (click)="onRefresh()">
         <mat-icon>QR코드 재발급</mat-icon>
       </button>
