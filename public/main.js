@@ -448,7 +448,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"user\">\n  <div id=\"container\">\n    <div id=\"block\">\n      <br />\n      <h2 class=\"page-header\">대기 순번 QR코드</h2>\n      <br />\n      <ul class=\"list-group\">\n        <h4>{{ user.name }}님의 QR코드</h4>\n        <li class=\"list-group-item\">이메일 : {{ user.email }}</li>\n        <li class=\"list-group-item\">생일 : {{ user.birth }}</li>\n        <li class=\"list-group-item\">\n          대기 등록 시간 : {{ this.kr_curr | date: \"hh:mm:ss a\" }}\n        </li>\n      </ul>\n      <br />\n      <div *ngIf=\"createdCode\" class=\"qrdata\">\n        <ngx-qrcode [value]=\"createdCode\"></ngx-qrcode>\n      </div>\n      <br />\n      <button mat-icon-button (click)=\"onRefresh()\">\n        <mat-icon>QR코드 재발급</mat-icon>\n      </button>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"user\">\n  <div id=\"container\">\n    <div id=\"block\">\n      <br />\n      <h2 class=\"page-header\">대기 순번 QR코드</h2>\n      <br />\n      <ul class=\"list-group\">\n        <h4>{{ user.name }}님의 QR코드</h4>\n        <li class=\"list-group-item\">이메일 : {{ user.email }}</li>\n        <li class=\"list-group-item\">생일 : {{ user.birth }}</li>\n        <li class=\"list-group-item\">\n          대기 등록 시간 : {{ this.kr_curr | date: \"hh:mm:ss a\" }}\n        </li>\n      </ul>\n      <br />\n      <div *ngIf=\"createdCode\" class=\"qrdata\" style=\"text-align: center\">\n        <ngx-qrcode [value]=\"createdCode\"></ngx-qrcode>\n      \n      <br />\n      <button type=\"button\" class=\"btn btn-warning\" (click)=\"onRefresh()\">\n        QR코드 재발급\n      </button></div>\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -688,24 +688,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _customer_num_component_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./customer-num.component.scss */ "r3tT");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _services_customers_num_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/customers_num.service */ "Zfc8");
-/* harmony import */ var src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/auth.service */ "lGQG");
-
 
 
 
 
 
 let CustomerNumComponent = class CustomerNumComponent {
-    constructor(customer1Service, authService) {
+    constructor(customer1Service) {
         this.customer1Service = customer1Service;
-        this.authService = authService;
         this.customers = [];
         this.customersQuantity = 0;
     }
     ngOnInit() {
-        this.authService.getProfile().subscribe((profile) => {
-            this.name = profile.user.name;
-        });
         setInterval(() => {
             this.customer1Service.getCustomerNums().subscribe((data) => {
                 this.customers = data;
@@ -715,8 +709,7 @@ let CustomerNumComponent = class CustomerNumComponent {
     }
 };
 CustomerNumComponent.ctorParameters = () => [
-    { type: _services_customers_num_service__WEBPACK_IMPORTED_MODULE_4__["CustomerNumService"] },
-    { type: src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] }
+    { type: _services_customers_num_service__WEBPACK_IMPORTED_MODULE_4__["CustomerNumService"] }
 ];
 CustomerNumComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({

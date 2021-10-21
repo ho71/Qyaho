@@ -13,13 +13,13 @@
         </li>
       </ul>
       <br />
-      <div *ngIf="createdCode" class="qrdata">
+      <div *ngIf="createdCode" class="qrdata" style="text-align: center">
         <ngx-qrcode [value]="createdCode"></ngx-qrcode>
-      </div>
+      
       <br />
-      <button mat-icon-button (click)="onRefresh()">
-        <mat-icon>QR코드 재발급</mat-icon>
-      </button>
+      <button type="button" class="btn btn-warning" (click)="onRefresh()">
+        QR코드 재발급
+      </button></div>
     </div>
   </div>
 </div>

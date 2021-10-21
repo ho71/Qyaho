@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cus_num } from '../../models/cus.num';
 import { CustomerNumService } from '../../services/customers_num.service';
-import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-customer-num',
@@ -14,14 +13,10 @@ export class CustomerNumComponent implements OnInit {
   name: string;
 
   constructor(
-    private customer1Service: CustomerNumService,
-    private authService: AuthService
+    private customer1Service: CustomerNumService
   ) {}
 
   ngOnInit() {
-    this.authService.getProfile().subscribe((profile) => {
-      this.name = profile.user.name;
-    });
     setInterval(() => {
       this.customer1Service.getCustomerNums().subscribe((data) => {
         this.customers = data;
